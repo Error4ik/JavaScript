@@ -105,3 +105,69 @@
 // console.log(c);
 // console.log(d);
 // console.log(e);
+
+// //TODO метод map для массивов, возвращает новый массив не меняея исходный.
+// let array1 = [3, 4, 7];
+// let array2;
+// //item - каждый элемент массива, index - индекс, array1 - сам массив.
+// array2 = array1.map(function (item, index, array1) {
+//     return item * 2;
+// });
+// console.log(array2);
+
+// //TODO метод filter возвращает новый массив, фильрует массив по определенным условиям.
+// let arr = [6, 9, -1, -11, 28, -3, -19, 6, 7];
+// let arr2;
+// console.log(arr);
+// //item - каждый элемент массива, index - индекс, arr1 - сам массив.
+// arr2 = arr.filter(function (item, index, arr1) {
+//     return item % 2 === 0;
+// });
+//
+// console.log(arr2);
+
+// //TODO метод every and метод some, Оба метода эквиваленты понятию (И - ИЛИ)
+// let arr = [3, 11, 24, 2, 9, 5];
+// let result;
+// console.log(arr);
+//
+// //item элемент массива. Возвращает либо true либо false.
+// //Выполняется ли условие для каждого элемента массива, если все возвращают true
+// //значит вернется true, если хотя бы для одного будет false вернется false.
+// result = arr.every(function (item) {
+//     return item > 5;
+// });
+//
+// console.log(result);
+//
+// //Проверят условие для каждого эжлемента массива и если хотя бы 1 подходит то вернет тру.
+// result = arr.some(function (item) {
+//     return item > 5;
+// });
+//
+// console.log(result);
+
+//TODO метод reduce и reduceRight, перебирает массив и сохраняет промежуточный результат.
+let arr = [3, 4, 5, 11, 12, 65];
+let result;
+console.log(arr);
+
+//первый параметр это первый элемент, второй параметр это текущий элемент кроме первого
+//третий параметр это индекс.
+//accum сохраняет промежуточное значение.
+result = arr.reduce(function (accum, currentValue, index) {
+    console.log("Prev value " + accum);
+    console.log("Current value " + currentValue);
+    return accum + currentValue;
+});
+
+console.log(result);
+
+//делает тоже самое но наоборот.
+result = arr.reduceRight(function (accum, currentValue, index) {
+    console.log("Prev value " + accum);
+    console.log("Current value " + currentValue);
+    return accum + currentValue;
+});
+
+console.log(result);
