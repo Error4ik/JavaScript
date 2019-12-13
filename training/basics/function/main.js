@@ -62,15 +62,27 @@
 //
 // first("Hello World!", second);
 
-function first(callback) {
-    console.log("Test");
-    callback();
-}
+// function first(callback) {
+//     console.log("Test");
+//     callback();
+// }
+//
+// function second(a, b) {
+//     console.log(a * b);
+// }
+//
+// first(function () {
+//     second(3, 9);
+// });
 
-function second(a, b) {
-    console.log(a * b);
-}
+//TODO input.
+let input = document.querySelector("#inputText");
+let btnGo = document.querySelector("#btnGo");
+let out = document.querySelector("#out");
 
-first(function () {
-    second(3, 9);
-});
+btnGo.onclick = function () {
+  console.log(input.value);
+  // + переводит ввод в число.
+  console.log(+input.value * 2);
+  out.innerHTML = input.value;
+};
