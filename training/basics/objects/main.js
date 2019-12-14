@@ -29,45 +29,62 @@
 //
 // console.log(user);
 
-let user = {
-    name: "Alex",
-    surname: "Ivanov",
-    age: 50,
-    sex: "male",
-    married: false
+// let user = {
+//     name: "Alex",
+//     surname: "Ivanov",
+//     age: 50,
+//     sex: "male",
+//     married: false
+// };
+//
+// user.weight = 70;
+//
+// user.pets = [
+//     {
+//         name: "bob",
+//         age: 5,
+//         weight: 15,
+//         type: "dog"
+//     },
+//     {
+//         name: "sonya",
+//         age: 12,
+//         weight: 3,
+//         type: "cat"
+//     },
+//     {
+//         name: "rex",
+//         age: 3,
+//         weight: 5,
+//         type: "cat"
+//     }
+// ];
+//
+// delete user.married;
+//
+// console.log(user);
+//
+// for (let key in user) {
+//     console.log(key + " - " + user[key]);
+// }
+//
+// console.log(Object.keys(user.length));
+// console.log(Object.keys(user));
+
+let solder = {
+    health: 200,
+    armor: 100
 };
 
-user.weight = 70;
+let alex = {
+    name: "Alex",
+    height: 180,
+    weight: 80
+};
 
-user.pets = [
-    {
-        name: "bob",
-        age: 5,
-        weight: 15,
-        type: "dog"
-    },
-    {
-        name: "sonya",
-        age: 12,
-        weight: 3,
-        type: "cat"
-    },
-    {
-        name: "rex",
-        age: 3,
-        weight: 5,
-        type: "cat"
-    }
-];
+console.log(alex);
 
-delete user.married;
+alex.__proto__ = solder;
 
-console.log(user);
-
-for (let key in user) {
-    console.log(key + " - " + user[key]);
-}
-
-console.log(Object.keys(user.length));
-console.log(Object.keys(user));
-
+console.log(alex.health);
+console.log(alex.armor);
