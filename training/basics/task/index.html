@@ -4,23 +4,129 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
-<div class="container">
-    <div class="logo">
-        <span>Money</span>
+<div class="container-fluid text-center p-0 m-0">
+    <div class="logo p-1">
+        <span class="money-logo">money</span>
         keeper
     </div>
-    <div class="title">
-        Расчет дневного бюджета
-    </div>
-    <div class="main">
-        <div class="data">
+    <p class="title p-1">Расчет дневного бюджета</p>
+    <div class="container p-1">
+        <div class="row main p-2 m-0">
+            <div class="main col-6 p-1 m-0">
+                <p class="m-1 p-1">Введите обязательные расходы</p>
+                <div class="row p-2 m-0">
+                    <div class="col-6 p-1">
+                        <input type="text" class="form-control expenses-item shadow" id="expenses-item-1"
+                               name="expenses-item-1" placeholder="Наименование" autofocus required="required">
+                    </div>
+                    <div class="col-6 p-1 m-0">
+                        <input type="number" class="form-control expenses-item shadow" id="expenses-price-item-1"
+                               name="expenses-price-item-1" placeholder="Цена" required="required">
+                    </div>
+                    <div class="col-6 p-1">
+                        <input type="text" class="form-control expenses-item shadow" id="expenses-item-2"
+                               name="expenses-item-2" placeholder="Наименование" autofocus required="required">
+                    </div>
+                    <div class="col-6 p-1" style="padding: 5px">
+                        <input type="number" class="form-control expenses-item shadow" id="expenses-price-item-2"
+                               name="expenses-price-item-2" placeholder="Цена" required="required">
+                    </div>
+                </div>
+                <div class="col-12 m-0 p-1">
+                    <button class="btn btn-warning shadow" id="expensive-approve">Утвердить</button>
+                </div>
+                <p class="m-1 p-1">Введите необязательные расходы</p>
+                <div class="row p-2 m-0">
+                    <div class="col-4 p-1">
+                        <input type="text" class="form-control expenses-optional shadow" id="expenses-optional-1"
+                               name="expenses-optional-1" autofocus required="required">
+                    </div>
+                    <div class="col-4 p-1 m-0">
+                        <input type="text" class="form-control expenses-optional shadow" id="expenses-optional-2"
+                               name="expenses-optional-2" required="required">
+                    </div>
+                    <div class="col-4 p-1">
+                        <input type="text" class="form-control expenses-optional shadow" id="expenses-optional-3"
+                               name="expenses-optional-3" autofocus required="required">
+                    </div>
+                </div>
+                <div class="col-12 m-0 p-1">
+                    <button class="btn btn-warning shadow" id="optional-approve">Утвердить</button>
+                </div>
+                <p class="m-1 p-1">Расчет дневного бюджета</p>
+                <div class="col-12 m-0 p-1">
+                    <button class="btn btn-warning shadow" id="calculate-budget">Расчитать</button>
+                </div>
+                <p class="m-1 p-1">Введите статьи возможного дохода через запятую</p>
+                <div class="col-12 p-1">
+                    <input type="text" class="form-control shadow" id="income-money" name="income-money" autofocus
+                           required="required">
+                </div>
+                <div class="col-12 p-1">
+                    <label for="capital">Есть ли накопления</label>
+                    <input type="checkbox" class="form-control" id="capital" name="capital" autofocus
+                           required="required">
+                </div>
+                <div class="row p-2 m-0">
+                    <div class="col-6 p-1">
+                        <label for="sum-capital">Сумма накоплений</label>
+                        <input type="number" class="form-control shadow" id="sum-capital" name="sum-capital" autofocus
+                               required="required">
+                    </div>
+                    <div class="col-6 p-1">
+                        <label for="deposit-interest">Процент по вкладу</label>
+                        <input type="number" class="form-control shadow" id="deposit-interest" name="deposit-interest"
+                               autofocus required="required">
+                    </div>
+                </div>
+                <div class="col-12 m-0 p-1">
+                    <button class="btn btn-warning shadow" id="start-calculation">Начать расчет</button>
+                </div>
+            </div>
 
+            <div class="col-6 p-2 m-0">
+                <p class="m-1 p-1">Результат расчетов</p>
+                <div class="info p-1">
+                    <p id="result-income">Доход:</p>
+                    <p id="budget-per-day">Бюджет на 1 день:</p>
+                    <p id="income-level">Уровень дохода:</p>
+                    <p id="mandatory-expenses">Обязательные расходы:</p>
+                    <p id="optional-expenses">Возможные траты:</p>
+                    <p id="additional-income">Дополнительный доход:</p>
+                    <p id="capital-per-month">Накопления за 1 месяц:</p>
+                    <p id="capital-per-year">Накопления за 1 год:</p>
+                </div>
+                <div class="row p-1 m-0">
+                    <div class="col-4 date p-1">
+                        <label for="day">Day</label>
+                        <input type="text" class="form-control shadow" id="day" name="day">
+                    </div>
+                    <div class="col-4 date p-1">
+                        <label for="month">Month</label>
+                        <input type="text" class="form-control shadow" id="month" name="month">
+                    </div>
+                    <div class="col-4 date p-1">
+                        <label for="year">Year</label>
+                        <input type="text" class="form-control shadow" id="year" name="year">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-
 <script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
 </html>

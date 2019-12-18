@@ -1,0 +1,52 @@
+.shadow {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.info {
+    margin-top: 13px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.info > p {
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 0;
+    font-weight: bold;
+    padding: 15px 10px 20px 10px;
+}
+
+.container-fluid {
+    background-color: #f3f1e5;
+}
+
+.logo {
+    height: 60px;
+    background-color: white;
+    font-weight: bold;
+    font-size: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.money-logo {
+    color: #ff7e2a;
+}
+
+.title {
+    margin-top: 30px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.date {
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
