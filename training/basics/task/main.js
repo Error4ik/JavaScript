@@ -162,11 +162,12 @@ function getIncomeLevel(data) {
     let result = data.budget - data.allExpenses;
     let level = "";
     if (result > 0) {
-        if (result > 30000 && result < 40000) {
+        console.log(result);
+        if (result >= 30000 && result < 40000) {
             level = "Низкий"
-        } else if (result > 40000 && result < 50000) {
+        } else if (result >= 40000 && result < 50000) {
             level = "Средний"
-        } else if (result > 50000) {
+        } else if (result >= 50000) {
             level = "Высокий"
         }
     }
