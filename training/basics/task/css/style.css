@@ -50,3 +50,7 @@
     font-size: 18px;
     font-weight: bold;
 }
+
+.date > input {
+    text-align: center;
+}

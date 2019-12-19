@@ -21,66 +21,66 @@
                 <div class="row p-2 m-0">
                     <div class="col-6 p-1">
                         <input type="text" class="form-control expenses-item shadow" id="expenses-item-1"
-                               name="expenses-item-1" placeholder="Наименование" autofocus required="required">
+                               disabled name="expenses-item-1" placeholder="Наименование" autofocus required="required">
                     </div>
                     <div class="col-6 p-1 m-0">
                         <input type="number" class="form-control expenses-item shadow" id="expenses-price-item-1"
-                               name="expenses-price-item-1" placeholder="Цена" required="required">
+                               disabled name="expenses-price-item-1" placeholder="Цена" required="required">
                     </div>
                     <div class="col-6 p-1">
                         <input type="text" class="form-control expenses-item shadow" id="expenses-item-2"
-                               name="expenses-item-2" placeholder="Наименование" autofocus required="required">
+                               disabled name="expenses-item-2" placeholder="Наименование" autofocus required="required">
                     </div>
                     <div class="col-6 p-1" style="padding: 5px">
                         <input type="number" class="form-control expenses-item shadow" id="expenses-price-item-2"
-                               name="expenses-price-item-2" placeholder="Цена" required="required">
+                               disabled name="expenses-price-item-2" placeholder="Цена" required="required">
                     </div>
                 </div>
                 <div class="col-12 m-0 p-1">
-                    <button class="btn btn-warning shadow" id="expensive-approve">Утвердить</button>
+                    <button class="btn btn-warning shadow" id="expensive-approve" disabled>Утвердить</button>
                 </div>
                 <p class="m-1 p-1">Введите необязательные расходы</p>
                 <div class="row p-2 m-0">
                     <div class="col-4 p-1">
-                        <input type="text" class="form-control expenses-optional shadow" id="expenses-optional-1"
-                               name="expenses-optional-1" autofocus placeholder="Сумма" required="required">
+                        <input type="number" class="form-control expenses-optional shadow" id="expenses-optional-1"
+                               disabled name="expenses-optional-1" autofocus placeholder="Сумма" required="required">
                     </div>
                     <div class="col-4 p-1 m-0">
-                        <input type="text" class="form-control expenses-optional shadow" id="expenses-optional-2"
-                               name="expenses-optional-2" autofocus placeholder="Сумма" required="required">
+                        <input type="number" class="form-control expenses-optional shadow" id="expenses-optional-2"
+                               disabled name="expenses-optional-2" autofocus placeholder="Сумма" required="required">
                     </div>
                     <div class="col-4 p-1">
-                        <input type="text" class="form-control expenses-optional shadow" id="expenses-optional-3"
-                               name="expenses-optional-3" autofocus placeholder="Сумма" required="required">
+                        <input type="number" class="form-control expenses-optional shadow" id="expenses-optional-3"
+                               disabled name="expenses-optional-3" autofocus placeholder="Сумма" required="required">
                     </div>
                 </div>
                 <div class="col-12 m-0 p-1">
-                    <button class="btn btn-warning shadow" id="optional-approve">Утвердить</button>
+                    <button class="btn btn-warning shadow" id="optional-approve" disabled>Утвердить</button>
                 </div>
                 <p class="m-1 p-1">Расчет дневного бюджета</p>
                 <div class="col-12 m-0 p-1">
-                    <button class="btn btn-warning shadow" id="calculate-budget">Расчитать</button>
+                    <button class="btn btn-warning shadow" id="calculate-budget-per-day" disabled>Расчитать</button>
                 </div>
                 <p class="m-1 p-1">Введите статьи возможного дохода через запятую</p>
                 <div class="col-12 p-1">
-                    <input type="text" class="form-control shadow" id="income-money" name="income-money" autofocus
-                           placeholder="Доход" required="required">
+                    <input type="text" class="form-control shadow" id="income-money" name="income-money"
+                           autofocus disabled placeholder="Доход" required="required">
                 </div>
                 <div class="col-12 p-1">
                     <label for="capital">Есть ли накопления</label>
                     <input type="checkbox" class="form-control" id="capital" name="capital" autofocus
-                           required="required">
+                           disabled required="required">
                 </div>
                 <div class="row p-2 m-0">
                     <div class="col-6 p-1">
                         <label for="sum-capital">Сумма накоплений</label>
-                        <input type="number" class="form-control shadow" id="sum-capital" name="sum-capital" autofocus
-                               required="required">
+                        <input type="number" class="form-control shadow" id="sum-capital" name="sum-capital"
+                               autofocus disabled required="required">
                     </div>
                     <div class="col-6 p-1">
                         <label for="deposit-interest">Процент по вкладу</label>
-                        <input type="number" class="form-control shadow" id="deposit-interest" name="deposit-interest"
-                               autofocus required="required">
+                        <input type="number" class="form-control shadow" id="deposit-interest"
+                               name="deposit-interest" disabled autofocus required="required">
                     </div>
                 </div>
                 <div class="col-12 m-0 p-1">
@@ -91,27 +91,41 @@
             <div class="col-6 p-2 m-0">
                 <p class="m-1 p-1">Результат расчетов</p>
                 <div class="info p-1">
-                    <p id="result-income">Доход:</p>
-                    <p id="budget-per-day">Бюджет на 1 день:</p>
-                    <p id="income-level">Уровень дохода:</p>
-                    <p id="mandatory-expenses">Обязательные расходы:</p>
-                    <p id="optional-expenses">Возможные траты:</p>
-                    <p id="additional-income">Дополнительный доход:</p>
-                    <p id="capital-per-month">Накопления за 1 месяц:</p>
-                    <p id="capital-per-year">Накопления за 1 год:</p>
+                    <div class="row p-1 m-0">
+                        <div class="col-6">
+                            <p>Доход:</p>
+                            <p>Бюджет на 1 день:</p>
+                            <p>Уровень дохода:</p>
+                            <p>Обязательные расходы:</p>
+                            <p>Возможные траты:</p>
+                            <p>Дополнительный доход:</p>
+                            <p>Накопления за 1 месяц:</p>
+                            <p>Накопления за 1 год:</p>
+                        </div>
+                        <div class="col-6">
+                            <p id="result-income">0</p>
+                            <p id="budget-per-day">0</p>
+                            <p id="income-level">0</p>
+                            <p id="mandatory-expenses">0</p>
+                            <p id="optional-expense">0</p>
+                            <p id="additional-income">0</p>
+                            <p id="capital-per-month">0</p>
+                            <p id="capital-per-year">0</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="row p-1 m-0">
                     <div class="col-4 date p-1">
                         <label for="day">Day</label>
-                        <input type="text" class="form-control shadow" id="day" name="day">
+                        <input type="text" class="form-control shadow" id="day" name="day" readonly>
                     </div>
                     <div class="col-4 date p-1">
                         <label for="month">Month</label>
-                        <input type="text" class="form-control shadow" id="month" name="month">
+                        <input type="text" class="form-control shadow" id="month" name="month" readonly>
                     </div>
                     <div class="col-4 date p-1">
                         <label for="year">Year</label>
-                        <input type="text" class="form-control shadow" id="year" name="year">
+                        <input type="text" class="form-control shadow" id="year" name="year" readonly>
                     </div>
                 </div>
             </div>
