@@ -2,8 +2,10 @@ window.addEventListener('DOMContentLoaded', function () {
 
     'use strict'; //TODO Строгий режим стандарта ES6
 
-    let deadline = "2019-12-25";
+    let deadline = "2019-12-29";
+    let timeOver = "Время акции истекло!";
 
+    let timeLeft = document.getElementById('time-left');
     let timerElement = document.getElementById('timer');
     let hours = timerElement.querySelector('#hours');
     let minutes = timerElement.querySelector('#minutes');
@@ -41,11 +43,12 @@ window.addEventListener('DOMContentLoaded', function () {
             minutes.textContent = time.minutes;
             seconds.textContent = time.seconds;
 
-            if (time.total < 0) {
+            if (time.total < 1000) {
+                timeLeft.textContent = timeOver;
                 clearInterval(timeIntervalId);
             }
         }
     }
 
-    setClock(deadline)
+    setClock(deadline);
 });
