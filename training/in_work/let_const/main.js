@@ -38,12 +38,24 @@ window.addEventListener('DOMContentLoaded', function () {
     // arr2[3]();
     // arr2[7]();
 
-    //TODO Параметры по умолчанию.
-    //По умолчанию basis равен 2, если он не передан.
-    function calcOrDouble(number, basis = 2) {
-        console.log(number * basis);
-    }
+    // //TODO Параметры по умолчанию.
+    // //По умолчанию basis равен 2, если он не передан.
+    // function calcOrDouble(number, basis = 2) {
+    //     console.log(number * basis);
+    // }
+    //
+    // calcOrDouble(9, 4);
+    // calcOrDouble(9);
 
-    calcOrDouble(9, 4);
-    calcOrDouble(9);
+    //TODO Классы.
+    class Rectangle {
+        constructor(width, height) {
+            this.width = width;
+            this.height = height;
+        };
+
+        calcArea() {
+            return this.width * this.height;
+        }
+    }
 });
