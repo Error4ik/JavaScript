@@ -47,15 +47,20 @@ window.addEventListener('DOMContentLoaded', function () {
     // calcOrDouble(9, 4);
     // calcOrDouble(9);
 
-    //TODO Классы.
-    class Rectangle {
-        constructor(width, height) {
-            this.width = width;
-            this.height = height;
-        };
-
-        calcArea() {
-            return this.width * this.height;
-        }
-    }
+    // //TODO Классы.
+    // class Rectangle {
+    //     constructor(width = 5, height = 4) {
+    //         this.width = width;
+    //         this.height = height;
+    //     };
+    //
+    //     calcArea() {
+    //         return this.width * this.height;
+    //     }
+    // }
+    //
+    // const rectangle = new Rectangle(9, 6);
+    // const rectangle2 = new Rectangle();
+    // console.log(rectangle.calcArea());
+    // console.log(rectangle2.calcArea());
 });
