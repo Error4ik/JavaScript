@@ -63,4 +63,28 @@ window.addEventListener('DOMContentLoaded', function () {
     // const rectangle2 = new Rectangle();
     // console.log(rectangle.calcArea());
     // console.log(rectangle2.calcArea());
+
+    // //TODO spread. Оператор разворота. Ставится как (...). Разварачивает массив.
+    // let video = ['youtube', 'rutube', 'invin'];
+    // let blog = ['wordpress', 'lifejournale', 'blogger'];
+    // //Результат [Array(3), Array(3), "vk", "facebook"]
+    // let internet = [video, blog, 'vk', 'facebook'];
+    //
+    // //результат будет ["youtube", "rutube", "invin", "wordpress", "lifejournale", "blogger", "vk", "facebook"]
+    // let internet2 = [...video, ...blog, 'vk', 'facebook'];
+    //
+    // console.log(internet);
+    // console.log(internet2);
+    //
+    // function log(a, b, c) {
+    //     console.log(a);
+    //     console.log(b);
+    //     console.log(c);
+    //     console.log(a * b * c);
+    // }
+    //
+    // let numbers = [2, 5, 11];
+    //
+    // //Развернулся массив и подставился под переменные.
+    // log(...numbers);
 });
