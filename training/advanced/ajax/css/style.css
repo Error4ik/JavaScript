@@ -1,0 +1,33 @@
+.shadow {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+label {
+    font-size: 20px;
+    font-family: "Comic Sans MS", sans-serif;
+    font-weight: bold;
+    color: #08c94b;
+}
+
+.rub {
+    max-width: 300px;
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+.usd {
+    max-width: 300px;
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.error-message {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Comic Sans MS", sans-serif;
+    color: red;
+    display: none;
+}
