@@ -1,19 +1,12 @@
 .content .slider {
-    margin-top: 150px;
+    margin-top: 50px;
     position: relative;
 }
 .content .slider-title {
     font-size: 32px;
     color: #c78030;
 }
-.content .slider-title:after {
-    content: '';
-    display: block;
-    width: 10%;
-    height: 1px;
-    background-color: #c78030;
-    margin-top: 4px;
-}
+
 .content .slider .wrap {
     width: 100%;
     position: relative;
@@ -25,7 +18,7 @@
     position: relative;
 }
 .content .slider .wrap .slider-item img {
-    width: 100%;
+    width: 70%;
 }
 .content .slider .wrap .prev {
     position: absolute;
@@ -119,4 +112,8 @@
     background-color: #000;
     height: 18px;
     width: 18px;
+}
+
+body {
+    background-color: #626262;
 }
