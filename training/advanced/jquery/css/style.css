@@ -1,0 +1,32 @@
+#message {
+    display: none;
+}
+
+.list {
+    margin-top: 150px;
+}
+
+.list_item {
+    width: 200px;
+    border: 1px solid #1f2dff;
+    border-radius: 7px;
+    box-shadow: 0 0 3px rgb(0, 0, 0);
+}
+
+.wrapper {
+    margin-top: 50px;
+}
+
+.button-active {
+    background-color: #a97ac7;
+}
+
+.test {
+    opacity: unset;
+    height: unset;
+}
+
+.test2 {
+    opacity: initial;
+    height: initial;
+}
